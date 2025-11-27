@@ -1,0 +1,49 @@
+.futuristic-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 200px;
+}
+
+.ring {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #3498db;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+.glow {
+  width: 60px;
+  height: 60px;
+  border: 3px solid rgba(52, 152, 219, 0.4);
+  border-radius: 50%;
+  position: absolute;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+}
